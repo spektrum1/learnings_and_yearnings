@@ -1,0 +1,11 @@
+version: '3'
+services:
+    app:
+        image: valtintas/simple_server
+        ports:
+            - 8080:8080
+        build: .
+        command: npm run dev
+        volumes:
+            - .:/src/
+    
