@@ -1,0 +1,1 @@
+This script takes parameters and creates a shell script file for each parameter, appending the sh line ending, adding the shebang for bash (probably not ideal), and applying chmod +x to it. It was just made for fun and easy script template generation.

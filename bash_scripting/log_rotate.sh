@@ -8,7 +8,7 @@ start () {
 
 run_rotation () {
     ARCHIVE_SIZE=$(find $HERE -maxdepth 1 -name "cl_archive*" | wc -l | xargs)
-    [ $ARCHIVE_SIZE -eq 3 ] && zip_archive
+    [ $ARCHIVE_SIZE -gt 2 ] && zip_archive
     cp $HERE/cron_log.txt $HERE/cl_archive$ARCHIVE_SIZE.txt
     #echo "" > $HERE/cron_log.txt
 }
